@@ -46,7 +46,7 @@ body {
 
 nav {
   border-bottom: 1px solid #ccc;
-  background: #f1f1f1;
+  background: rgba(255, 255, 255, 0.6);
   display: flex;
   position: relative;
 }
@@ -149,6 +149,14 @@ body {
   color: #131313;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.G_ {
+  margin-top: 2rem;
+}
+
 .container {
   margin: 0;
   padding: 0;
@@ -248,7 +256,7 @@ body {
   width: 300px;
   position: absolute;
   bottom: 20%;
-  right: 77%;
+  right: 47%;
   transform: translate(-50%, -50%);
 }
 .rightWrapper .box2 .box-image {
@@ -278,6 +286,43 @@ body {
 }
 
 /* End Main Section */
+/*galery*/
+.gallery {
+  position: relative;
+  overflow: hidden;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery .revealer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: var(--primary);
+}
+
+.gallery .img-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 20rem;
+}
+
+.gallery .img-container .img-revealer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #0b1033;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
 /* FEATURES */
 div#main_header {
   color: black;
@@ -524,6 +569,7 @@ img {
   font-size: 2.9rem;
   color: #001b44 !important;
   font-family: "Roboto", sans-serif;
+  margin-top: 2rem;
 }
 
 .feature_points {
@@ -789,6 +835,50 @@ section .contact {
 @media only screen and (max-width: 480px) {
   #footer {
     margin-top: 20rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #section_img1 {
+    background-image: url(/building2.32cd9836.jpg);
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border-right-style: groove;
+    border-right-color: darkblue;
+  }
+
+  #section_img2 {
+    background-image: url(/white.f9652002.jpg);
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+  }
+
+  #Commercial_right {
+    background-image: url(/building10.86d8779e.jpg);
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .feature_points {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 200%;
+  }
+
+  #footer {
+    margin-top: 50px;
   }
 }
 
